@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    background: url('../images/background-image.png') no-repeat fixed top right;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px 13% 13%;
+}
+
+#info {
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ECF8FE;
+}
+
+#connect-wallet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /*padding: 0px;*/
+    align-self: stretch;
+}
+
+#main-page-link {
+    right: 0;
+    font-family: Open Sans;
+    margin-right: 40px;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: right;
+    color: #D5E8F5;
+    margin-left: auto;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+#main-page-link:hover {
+    color: #2A4561;
+    transition: color .3s;
+}
+
+#connect-wallet-btn {
+    position: static;
+    width: 230px;
+    height: 44px;
+    background: #3D516D;
+    border-radius: 15px;
+    border:  none;
+    margin-left: auto;
+}
+
+#connect-wallet-text {
+    font-family: Open Sans;
+    font-size: 16px;
+    margin: 0px;
+    line-height: 16px;
+    text-align: center;
+    color: #ECF8FE;
+    transition: color .3s;
+}
+
+#connect-wallet-text:hover {
+    color: #6EBBE7;
+    transition: color .3s;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px;
+    margin-top: 50px;
+    width: 350px;
+    height: 300px;
+
+    background: rgba(254, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+
+#usdt-amount-wrapper {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 0px 40px;
+    margin-bottom: 10px;
+    position: static;
+    height: 60px;
+    background: #ECF8FE;
+    border: 1.5px solid transparent;
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#usdt-amount-wrapper:hover {
+    border: 1.5px solid #6EBBE7;
+}
+
+#balance-wrapper {
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    margin-top: 25px;
+    line-height: 14px;
+    font-size: 14px;
+    font-family: Open Sans;
+    color: #6380A9;
+}
+
+#balance-info {
+    position: absolute;
+    display: none; //flex
+flex-direction: row;
+    margin-top: 25px;
+    line-height: 14px;
+    font-size: 14px;
+    font-family: Open Sans;
+    color: #6380A9;
+}
+
+#max-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    line-height: 14px;
+    font-size: 14px;
+    font-family: Open Sans;
+    color: #6EBBE7;
+}
+
+#max-btn:hover {
+    color: #3E526E;
+    transition: color .3s;
+}
+
+#arrow-icon {
+    display: none;
+}
+
+#krst-amount-wrapper {
+    display: none;
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin-bottom: 10px;
+    position: static;
+    height: 60px;
+    background: #ECF8FE;
+    border: 1.5px solid transparent;
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.token-label {
+    margin-top: 12px;
+    position: static;
+    font-family: Open Sans;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3E526E;
+}
+
+
+#usdt-amount-input {
+    position: static;
+    font-family: Open Sans;
+    font-size: 20px;
+    height: 20px;
+    text-align: right;
+    color: #3E526E;
+    background: transparent;
+    border: none;
+    width: 170px;
+    margin: 10px -2px 0px 0px;
+}
+
+#usdt-amount-input:focus {
+    outline: none;
+}
+
+#krst-amount {
+    position: static;
+    font-family: Open Sans;
+    font-size: 20px;
+    max-width: 200px;
+    overflow: hidden;
+    line-height: 20px;
+    text-align: right;
+    color: #3E526E;
+    margin: 12px 0px 0px 0px;
+}
+
+.material-icons-outlined {
+    position: absolute;
+    margin-top: 55px;
+    color: #ECF8FE;
+    background: #3A4862;
+    border-radius: 15px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+::-webkit-input-placeholder { text-align:right; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input:-moz-placeholder { text-align:right; }
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: static;
+    height: 130px;
+    align-self: stretch;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-top: 20px;
+}
+
+.btn {
+    position: static;
+    height: 60px;
+    border:  none;
+    background: #3D516D;
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 10px;
+    transition: background .3s;
+}
+
+.btn:hover {
+    background: #6EBBE7;
+    transition: background .3s;
+}
+
+#invest-btn:hover {
+    background: #6EBBE7;
+    transition: background .3s;
+}
+
+#approve-btn:hover {
+    background: #6EBBE7;
+    transition: background .3s;
+}
+
+.btn-text {
+    position: static;
+    font-family: Open Sans;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ECF8FE;
+}
+
+.loader {
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    border: 3px solid #ECF8FE;
+    border-radius: 50%;
+    border-top: 3px solid #6EBBE7;
+    width: 12px;
+    height: 12px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#smart-contract-info {
+    opacity: 0.6;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    color: #ECF8FE;
+}
+#smart-contract-info  p:first-child {
+    margin-bottom: 0;
+}
+#smart-contract-info p:last-child {
+    margin-top: 0;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

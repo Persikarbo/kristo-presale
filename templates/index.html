@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kristo Presale</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+          rel="stylesheet">
+</head>
+<body>
+<div id="connect-wallet">
+    <a href="https://www.kristoapp.com/"><img src="../images/app-name-colored.png" style="height: 38px;  margin-left: 1px;" alt=""></a>
+    <a href="https://www.kristoapp.com/" id="main-page-link">На главную</a>
+    <button id="connect-wallet-btn"><p id="connect-wallet-text">Подключить кошелек</p></button>
+</div>
+<div id="wrapper">
+    <div id="info" style="display: none"> Прежде чем приступить к работе, пожалуйста, установите расширение MetaMask и обновите страницу.
+    </div>
+    <div id="usdt-amount-wrapper">
+        <p class="token-label">DAI</p>
+        <input type="number" name="input" id="usdt-amount-input" placeholder="0">
+        <div id="balance-wrapper"><p id="balance-text">Баланс: 0 DAI</p><button id="max-btn">(Макс.)</button></div>
+    </div>
+    <span class="material-icons-outlined" id="arrow-icon">arrow_downward</span>
+    <div id="krst-amount-wrapper">
+        <p class="token-label">KRST</p>
+        <p id="krst-amount">0</p>
+        <div id="balance-info"><p>Вам поступит сумма, умноженная на 10^9.</p></div>
+    </div>
+    <div id="btn-wrapper">
+        <button class="btn" id="approve-btn" style="display: none">
+            <div id="approve-loader" class="loader"></div>
+            <p class="btn-text" id="approve-btn-text">Подтвердить транзакцию</p>
+        </button>
+        <button class="btn" id="invest-btn" style="display: none">
+            <div id="invest-loader" class="loader"></div>
+            <p class="btn-text" id="invest-btn-text">Инвестировать</p>
+        </button>
+        <button class="btn" id="connect-wallet-btn-2" style="display: none">
+<!--            <div id="connect-loader" class="loader"></div>-->
+            <p class="btn-text" id="connect-wallet-btn-text-2">Подключить кошелек</p>
+        </button>
+        <a class="download-link"  href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" id="btn" style="display: none;text-decoration: none;" target="_blank">
+            <p class="btn-text" id="download-link-text" style="text-align: center;margin: revert" >Скачать MetaMask</p>
+        </a>
+    </div>
+</div>
+<div id="smart-contract-info">
+    <p>Смарт-контракт: </p>
+    <p>0xF0a4E73Ed25D5829db2E665150Fdd0BF66B40b00</p>
+</div>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="../scripts/main.js"></script>
+</body>
+</html>
+
